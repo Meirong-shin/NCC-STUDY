@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NCC Study</title>
+    <link rel="stylesheet" href="styles.css?v=2" />
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <p class="eyebrow">LOCAL STUDY TOOL</p>
+        <h1>NCC Study</h1>
+        <p class="intro">Search your NCC 2025 Volume Two study library. Every result shows its source and page.</p>
+        <form id="search-form">
+          <label for="question">What do you want to learn?</label>
+          <div class="search-row">
+            <input id="question" name="question" placeholder="e.g. What waterproofing rules apply to wet areas?" required />
+            <button type="submit">Find sources</button>
+          </div>
+        </form>
+        <div class="suggestions" aria-label="Suggested study topics">
+          <button type="button" data-question="What waterproofing requirements apply to wet areas?">Wet areas</button>
+          <button type="button" data-question="How are Class 1 buildings classified?">Building classification</button>
+          <button type="button" data-question="What are the requirements for smoke alarms?">Smoke alarms</button>
+        </div>
+      </section>
+
+      <section id="search-answer" class="study-area" hidden>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SEARCH ANSWER</p>
+            <h2>Source-based summary</h2>
+          </div>
+          <button id="clear-history" type="button" class="text-button">Back to study guide</button>
+        </div>
+        <p id="status" class="status">Choose a topic to begin.</p>
+        <p id="search-summary" class="search-summary"></p>
+        <h3 class="sources-heading">Local RAG sources</h3>
+        <div id="results" class="results"></div>
+      </section>
+
+      <section class="chapter-area">
+        <p class="eyebrow">GUIDED COURSE</p>
+        <h2 id="chapter-title">Section A, Part A1 — Interpreting the NCC</h2>
+        <section id="chapter-summary" class="chapter-summary"></section>
+        <p id="chapter-status" class="status">Ten questions to build the foundation before you study detailed clauses.</p>
+        <div class="chapter-tabs">
+          <button id="study-queue" type="button">Study queue</button>
+          <button id="learned-archive" type="button" class="text-button">Learned archive</button>
+        </div>
+        <div class="section-tabs">
+          <div id="section-buttons" class="section-buttons"></div>
+          <div id="part-tabs" class="part-tabs"></div>
+        </div>
+        <button id="restore-learned" type="button" class="text-button">Restore archived questions</button>
+        <div id="chapter-cards" class="chapter-cards"></div>
+      </section>
+
+      <aside class="notice">
+        <strong>Study support, not project advice.</strong> Check the current official NCC and use an appropriate professional for live project decisions.
+      </aside>
+    </main>
+    <script src="library.js"></script>
+    <script src="chapters.js"></script>
+    <script src="section-a-v2.js"></script>
+    <script src="section-a-rest-v2.js?v=5"></script>
+    <script src="section-a-modules.js?v=1"></script>
+    <script src="section-h.js"></script>
+    <script src="section-h1-modules.js?v=1"></script>
+    <script src="section-h-rest-modules.js?v=1"></script>
+    <script src="specifications.js"></script>
+    <script src="section-s-v2.js?v=7"></script>
+    <script src="schedule-8-sa.js?v=1"></script>
+    <script src="app.js?v=4"></script>
+  </body>
+</html>

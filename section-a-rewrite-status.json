@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "scope": "Section A",
+  "targetQuestions": 105,
+  "qualityRules": [
+    "three meaningful questions per provision",
+    "one complete-coverage answer per provision",
+    "plain English and Chinese",
+    "include applications, limitations, exemptions and South Australian variations",
+    "cite the local clause and page",
+    "do not publish until fully reviewed"
+  ],
+  "completedParts": ["A1", "A2", "A3", "A4", "A5", "A6", "A7"],
+  "nextPart": null
+}
